@@ -1,0 +1,1536 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+* {
+  box-sizing: border-box; }
+
+a {
+  text-decoration: none;
+  color: #000000; }
+
+/*! header */
+header {
+  display: flex;
+  flex-direction: column;
+  background: #ffff;
+  /*! nav */
+  /*! banner */ }
+  header #topbox {
+    width: 100%;
+    position: absolute; }
+    header #topbox #top {
+      width: 1200px;
+      height: 50px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between; }
+      header #topbox #top .left {
+        display: flex;
+        flex: 1;
+        font-size: 15px;
+        color: #8D8D8D; }
+        header #topbox #top .left a {
+          text-decoration: none;
+          color: #000000; }
+        header #topbox #top .left a:nth-child(1) {
+          display: block;
+          width: 50px;
+          height: 49px;
+          color: #8D8D8D; }
+          header #topbox #top .left a:nth-child(1) img {
+            width: 100%; }
+        header #topbox #top .left ul {
+          display: flex;
+          justify-content: space-between; }
+          header #topbox #top .left ul li {
+            display: flex; }
+            header #topbox #top .left ul li a {
+              align-items: center;
+              margin-right: 22px;
+              height: 49px;
+              line-height: 49px;
+              text-decoration: none;
+              color: #000000; }
+          header #topbox #top .left ul li:nth-child(1) a {
+            width: 60px;
+            margin-left: 22px; }
+          header #topbox #top .left ul li:nth-child(7) {
+            position: relative; }
+            header #topbox #top .left ul li:nth-child(7) span {
+              color: #E1140A;
+              align-items: center;
+              margin-right: 22px;
+              height: 49px;
+              line-height: 49px; }
+            header #topbox #top .left ul li:nth-child(7) img {
+              display: none; }
+            header #topbox #top .left ul li:nth-child(7):hover img {
+              display: block;
+              width: 233px;
+              height: 124px;
+              position: absolute;
+              left: -32px;
+              top: 43px;
+              z-index: 2; }
+      header #topbox #top .right {
+        display: flex;
+        flex: 1;
+        justify-content: flex-end; }
+        header #topbox #top .right li a {
+          font-size: 12px;
+          width: 24px;
+          height: 49px;
+          line-height: 49px;
+          text-decoration: none;
+          color: #000000; }
+        header #topbox #top .right li i {
+          border-left: 1px solid #b8b8b8;
+          height: 11px;
+          display: inline-block;
+          margin: auto 2px; }
+        header #topbox #top .right li:nth-of-type(1) {
+          position: relative;
+          z-index: 2; }
+          header #topbox #top .right li:nth-of-type(1) p {
+            position: absolute;
+            top: 32px;
+            right: -30px;
+            width: 157px;
+            height: 33px;
+            background: url(https://p2.lefile.cn/product/adminweb/2019/01/18/028da9e3-588c-4a8c-9ed7-e94a9c639a12.png) no-repeat;
+            background-size: 157px 33px;
+            display: flex;
+            align-items: center; }
+            header #topbox #top .right li:nth-of-type(1) p a {
+              text-decoration: none;
+              color: #000000; }
+            header #topbox #top .right li:nth-of-type(1) p a:nth-of-type(1) {
+              font-size: 12px;
+              color: #BA9964;
+              height: 33px;
+              width: 112px;
+              line-height: 20px;
+              display: flex;
+              align-items: center;
+              margin: 5px 8px 0 10px; }
+            header #topbox #top .right li:nth-of-type(1) p a:nth-of-type(2) {
+              display: flex;
+              align-items: center;
+              padding-top: 5px; }
+        header #topbox #top .right li:nth-of-type(2) {
+          position: relative;
+          display: flex;
+          align-items: center; }
+          header #topbox #top .right li:nth-of-type(2) img:nth-of-type(1) {
+            width: 23px;
+            height: 23px;
+            margin-right: 72px;
+            margin-left: 20px; }
+          header #topbox #top .right li:nth-of-type(2) img:nth-of-type(2) {
+            position: absolute;
+            width: 233px;
+            height: 124px;
+            left: -28px;
+            top: 43px;
+            display: none; }
+          header #topbox #top .right li:nth-of-type(2):hover img:nth-of-type(2) {
+            display: inline-block;
+            z-index: 2; }
+  header nav {
+    width: 100%;
+    background: #E0E0E0;
+    position: absolute;
+    top: 50px; }
+    header nav section {
+      width: 1200px;
+      height: 70px;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-between; }
+      header nav section ul {
+        display: flex; }
+        header nav section ul a {
+          font-size: 17px;
+          color: #3a3a3a;
+          font-weight: 550;
+          line-height: 70px;
+          text-decoration: none; }
+          header nav section ul a li {
+            margin-right: 45px; }
+      header nav section form {
+        align-self: center;
+        position: relative;
+        width: 280px;
+        height: 40px;
+        margin-top: 17px; }
+        header nav section form input {
+          width: 237px;
+          height: 36px;
+          font-size: 12px;
+          line-height: 36px;
+          background: #eaeaea;
+          padding: 0 0px 0 17px;
+          margin-right: 8px;
+          box-sizing: content-box;
+          border: none;
+          outline: none;
+          border-radius: 39px;
+          z-index: 1; }
+        header nav section form a {
+          position: absolute;
+          top: 8px;
+          left: 220px;
+          text-decoration: none;
+          color: #000000; }
+  header #columns {
+    position: fixed;
+    right: 20px;
+    top: 25%;
+    display: none;
+    z-index: 1; }
+    header #columns ul {
+      background: #ffff; }
+      header #columns ul li {
+        display: flex;
+        flex-direction: column;
+        width: 50px;
+        cursor: pointer;
+        font-size: 16px;
+        padding: 10px 8px 10px;
+        align-items: center; }
+        header #columns ul li:hover i {
+          color: red; }
+        header #columns ul li:hover span {
+          color: red; }
+        header #columns ul li i {
+          font-size: 28px;
+          color: #a5a5a5; }
+        header #columns ul li span {
+          font-weight: 900;
+          color: #7e7d7d;
+          border-bottom: 1px solid #cccaca;
+          padding-bottom: 10px; }
+      header #columns ul .last {
+        background: #faf6f6;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        header #columns ul .last a {
+          display: inline-block;
+          width: 50px;
+          height: auto;
+          display: flex;
+          justify-content: center;
+          text-decoration: none;
+          color: #000000; }
+          header #columns ul .last a i {
+            font-size: 28px;
+            color: #a5a5a5; }
+          header #columns ul .last a:hover {
+            background: red; }
+  header #banner {
+    width: 100%;
+    height: 470px;
+    position: relative;
+    top: 120px; }
+    header #banner .picArea {
+      height: 470px;
+      width: 1920px;
+      margin: 0 auto;
+      position: relative; }
+      header #banner .picArea .pic {
+        display: flex;
+        position: absolute;
+        left: -1920px; }
+        header #banner .picArea .pic li a img {
+          height: 470px;
+          width: 1920px; }
+      header #banner .picArea .btn {
+        width: 100%;
+        height: 30px;
+        margin: 0 auto;
+        position: absolute;
+        top: 50%;
+        z-index: 2;
+        display: none; }
+        header #banner .picArea .btn article {
+          margin-top: -22px;
+          font-size: 50px;
+          cursor: pointer;
+          color: rgba(255, 255, 255, 0.85);
+          display: inline-block; }
+        header #banner .picArea .btn article:nth-child(1) {
+          position: absolute;
+          left: 0px; }
+        header #banner .picArea .btn article:nth-child(2) {
+          position: absolute;
+          right: 130px; }
+      header #banner .picArea:hover .btn {
+        display: block; }
+    header #banner .dot {
+      height: 12px;
+      line-height: 17px;
+      margin-bottom: 20px;
+      position: absolute;
+      bottom: 10px;
+      left: 48%;
+      cursor: pointer; }
+      header #banner .dot span {
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 100%;
+        background: #000;
+        margin: 8px; }
+      header #banner .dot .active {
+        background: #2086fa; }
+  header .menu {
+    width: 230px;
+    height: 412px;
+    background: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    top: 155px;
+    left: 56%;
+    margin-left: -720px; }
+    header .menu aside {
+      display: block;
+      height: 57.5px;
+      line-height: 57.5px;
+      border-left: 1px solid #e6e6e6;
+      border-top: 1px solid #e6e6e6;
+      font-weight: 600;
+      box-sizing: content-box;
+      padding-left: 30px; }
+      header .menu aside:hover {
+        background: #f1f1f1;
+        border-right: 1px solid #d1d1d1; }
+        header .menu aside:hover ul {
+          display: block; }
+        header .menu aside:hover i {
+          color: red; }
+      header .menu aside a {
+        display: block;
+        height: 57.5px;
+        font-size: 14px;
+        color: #606060; }
+        header .menu aside a i {
+          float: right;
+          padding-right: 20px;
+          font-weight: 900;
+          font-size: 16px; }
+      header .menu aside ul {
+        width: 964px;
+        background: #f7f7f7;
+        border-right: 1px solid #e6e6e6;
+        border-top: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        position: absolute;
+        left: 230px;
+        top: 0px;
+        z-index: 1;
+        list-style: none;
+        display: none;
+        min-height: 412px;
+        _height: 412px; }
+        header .menu aside ul li {
+          width: 110px;
+          text-align: right;
+          position: relative; }
+          header .menu aside ul li a {
+            font-size: 13px;
+            color: #494949;
+            font-weight: 600; }
+            header .menu aside ul li a:hover {
+              color: red; }
+          header .menu aside ul li ol {
+            width: 500px;
+            position: absolute;
+            top: 0;
+            left: 120px;
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 21px; }
+            header .menu aside ul li ol li {
+              flex-shrink: 0;
+              width: 100px;
+              height: 20px;
+              line-height: 12px;
+              text-align: left; }
+              header .menu aside ul li ol li a {
+                display: line-block;
+                width: 100px;
+                height: 12px;
+                color: #606060;
+                font-weight: 600;
+                font-size: 12px;
+                border-left: 1px solid #e6e6e6;
+                padding-left: 12px; }
+                header .menu aside ul li ol li a:hover {
+                  color: red; }
+        header .menu aside ul article {
+          position: absolute;
+          right: 20px;
+          top: 20px; }
+          header .menu aside ul article p {
+            height: 180px;
+            margin-bottom: 10px; }
+            header .menu aside ul article p:hover {
+              opacity: 0.8; }
+
+/* content*/
+#contentBox {
+  margin-top: 120px;
+  width: 100%;
+  background: #f5f5f5;
+  padding-bottom: 20px;
+  /* 产品区 */ }
+  #contentBox #icon {
+    width: 1200px;
+    height: 95px;
+    margin: 0 auto;
+    background: #ffff;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    #contentBox #icon li {
+      width: 84px; }
+      #contentBox #icon li a {
+        height: 95px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #000000; }
+        #contentBox #icon li a:hover {
+          box-shadow: 15px 0 15px -15px #c4c3c3, -15px 0 15px -15px #c4c3c3; }
+          #contentBox #icon li a:hover article {
+            position: relative;
+            top: -3px; }
+          #contentBox #icon li a:hover aside {
+            position: relative;
+            top: -3px; }
+        #contentBox #icon li a article {
+          font-size: 13px; }
+        #contentBox #icon li a aside {
+          font-size: 30px;
+          color: #A2A2A2;
+          padding-bottom: 5px; }
+      #contentBox #icon li:hover a article {
+        color: red; }
+      #contentBox #icon li:hover a aside {
+        color: red; }
+  #contentBox #content {
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 20px;
+    /* 主体内容 */ }
+    #contentBox #content .firstal {
+      height: 340px;
+      display: flex;
+      background: #ffff; }
+      #contentBox #content .firstal .miao li {
+        width: 230px;
+        height: 340px;
+        background: url(../images/ia_10212.png) no-repeat;
+        color: #ffff;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 45px; }
+        #contentBox #content .firstal .miao li i {
+          display: block;
+          width: 120px;
+          height: 27px;
+          font-size: 27px;
+          font-family: "微软雅黑"; }
+        #contentBox #content .firstal .miao li i:nth-of-type(2) {
+          font-size: 20px;
+          margin-top: 100px; }
+        #contentBox #content .firstal .miao li article span {
+          font-size: 16px;
+          padding-top: 5px; }
+        #contentBox #content .firstal .miao li article p {
+          font-size: 30px;
+          padding-top: 16px; }
+      #contentBox #content .firstal .list2 {
+        width: 921px;
+        height: 100%; }
+        #contentBox #content .firstal .list2 .m1 {
+          width: 921px;
+          height: 66px;
+          padding-left: 25px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1.5px solid #E8E8E8; }
+          #contentBox #content .firstal .list2 .m1 a {
+            width: 164px;
+            height: 25.3px;
+            margin-right: 5px;
+            font-size: 14px;
+            font-weight: 900;
+            line-height: 25.3px;
+            text-align: center;
+            text-decoration: none;
+            color: #000000; }
+            #contentBox #content .firstal .list2 .m1 a aside {
+              border-radius: 15px; }
+          #contentBox #content .firstal .list2 .m1 .a1 aside {
+            color: #ffff;
+            background: linear-gradient(to right, red, #fa1505, #fcba04); }
+          #contentBox #content .firstal .list2 .m1 .a2 aside:hover {
+            color: red; }
+          #contentBox #content .firstal .list2 .m1 .a3 aside:hover {
+            color: red; }
+        #contentBox #content .firstal .list2 .m2 {
+          display: flex;
+          padding-left: 22px; }
+          #contentBox #content .firstal .list2 .m2 li {
+            width: 192px;
+            height: 240px;
+            font-size: 16px;
+            padding-right: 10px;
+            margin: 17px 22px 0 14px;
+            border-right: 1.5px solid #E8E8E8; }
+            #contentBox #content .firstal .list2 .m2 li a {
+              display: block;
+              height: 240px;
+              text-decoration: none;
+              color: #000000; }
+              #contentBox #content .firstal .list2 .m2 li a img {
+                width: 160px;
+                height: 160px;
+                display: block; }
+              #contentBox #content .firstal .list2 .m2 li a article {
+                width: 192px; }
+                #contentBox #content .firstal .list2 .m2 li a article aside {
+                  display: inline;
+                  width: 192px;
+                  white-space: nowrap;
+                  overflow: hidden;
+                  text-overflow: ellipsis;
+                  font-size: 15px;
+                  color: #242424;
+                  font-weight: 600; }
+                #contentBox #content .firstal .list2 .m2 li a article p {
+                  width: 192px;
+                  height: 16px;
+                  margin-top: 4px; }
+                  #contentBox #content .firstal .list2 .m2 li a article p i {
+                    width: 32px;
+                    height: 18px;
+                    padding: 0 3px;
+                    font-size: 12px; }
+                #contentBox #content .firstal .list2 .m2 li a article div {
+                  display: flex;
+                  margin-top: 7px;
+                  align-items: center; }
+                  #contentBox #content .firstal .list2 .m2 li a article div span {
+                    display: inline-block;
+                    color: red;
+                    font-weight: 600; }
+                  #contentBox #content .firstal .list2 .m2 li a article div figure {
+                    color: #858585;
+                    font-size: 14px;
+                    padding-left: 5px; }
+          #contentBox #content .firstal .list2 .m2 li:nth-child(1) a article i {
+            color: #ffff;
+            background: linear-gradient(to right, #ff4b04, #fa5f05, #fa8805, #fcba04); }
+          #contentBox #content .firstal .list2 .m2 li:nth-child(2) a article i {
+            color: red;
+            background: pink; }
+          #contentBox #content .firstal .list2 .m2 li:nth-child(3) a article i {
+            color: #ffff;
+            background: linear-gradient(to right, #ff4b04, #fa5f05, #fa8805, #fcba04); }
+          #contentBox #content .firstal .list2 .m2 li:nth-child(4) {
+            border: none; }
+            #contentBox #content .firstal .list2 .m2 li:nth-child(4) a article i {
+              color: red;
+              background: pink; }
+      #contentBox #content .firstal .list3 a {
+        display: inline-block;
+        width: 49px;
+        height: 340px;
+        background: linear-gradient(37deg, #ec1111 1%, #ff8200 99%);
+        font-size: 14px;
+        color: #ffff;
+        writing-mode: vertical-lr;
+        letter-spacing: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+    #contentBox #content .lastal {
+      /* 模块一 */
+      /* 模块2 */
+      /* 模块3 */
+      /* 模块4 */
+      /* 模块5 */
+      /* 模块6 */
+      /* 模块7*/
+      /* 模块8 */
+      /* 模块9 */
+      /* 模块10 */ }
+      #contentBox #content .lastal .lastal1 {
+        width: 1200px;
+        margin: 70px  auto 0 auto; }
+        #contentBox #content .lastal .lastal1 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal1 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal1 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal1 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal1 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal1 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal1 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal1 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal1 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal1 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal1 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal1 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal1 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal1 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal1 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal1 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal1 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal1 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+      #contentBox #content .lastal .lastal2 {
+        width: 1200px;
+        margin: 50px  auto 0 auto; }
+        #contentBox #content .lastal .lastal2 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal2 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal2 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal2 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal2 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal2 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal2 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal2 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal2 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal2 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal2 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal2 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal2 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal2 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal2 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal2 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal2 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal2 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+      #contentBox #content .lastal .lastal3 {
+        width: 1200px;
+        margin: 50px  auto 0 auto; }
+        #contentBox #content .lastal .lastal3 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal3 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal3 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal3 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal3 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal3 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal3 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal3 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal3 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal3 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal3 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal3 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal3 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal3 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal3 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal3 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal3 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal3 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+      #contentBox #content .lastal .lastal4 {
+        width: 1200px;
+        margin: 50px  auto 0 auto; }
+        #contentBox #content .lastal .lastal4 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal4 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal4 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal4 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal4 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal4 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal4 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal4 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal4 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal4 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal4 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal4 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal4 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal4 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal4 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal4 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal4 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal4 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+      #contentBox #content .lastal .lastal5 {
+        width: 1200px;
+        margin: 50px  auto 0 auto; }
+        #contentBox #content .lastal .lastal5 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal5 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal5 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal5 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal5 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal5 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal5 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal5 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal5 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal5 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal5 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal5 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal5 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal5 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal5 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal5 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal5 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal5 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+      #contentBox #content .lastal .lastal6 {
+        width: 1200px;
+        margin: 50px  auto 0 auto; }
+        #contentBox #content .lastal .lastal6 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal6 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal6 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal6 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal6 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal6 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal6 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal6 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal6 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal6 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal6 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal6 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal6 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal6 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal6 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal6 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal6 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal6 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+      #contentBox #content .lastal .lastal7 {
+        width: 1200px;
+        margin: 50px  auto 0 auto; }
+        #contentBox #content .lastal .lastal7 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal7 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal7 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal7 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal7 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal7 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal7 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal7 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal7 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal7 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal7 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal7 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal7 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal7 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal7 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal7 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal7 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal7 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+      #contentBox #content .lastal .lastal8 {
+        width: 1200px;
+        margin: 50px  auto 0 auto; }
+        #contentBox #content .lastal .lastal8 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal8 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal8 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal8 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal8 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal8 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal8 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal8 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal8 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal8 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal8 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal8 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal8 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal8 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal8 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal8 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal8 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal8 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+      #contentBox #content .lastal .lastal9 {
+        width: 1200px;
+        margin: 50px  auto 0 auto; }
+        #contentBox #content .lastal .lastal9 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal9 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal9 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal9 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal9 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal9 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal9 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal9 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal9 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal9 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal9 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal9 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal9 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal9 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal9 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal9 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal9 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal9 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+      #contentBox #content .lastal .lastal10 {
+        width: 1200px;
+        margin: 50px  auto 0 auto; }
+        #contentBox #content .lastal .lastal10 .title1 {
+          margin-bottom: 16px;
+          display: flex;
+          justify-content: space-between;
+          color: #1f1f1f; }
+          #contentBox #content .lastal .lastal10 .title1 span {
+            font-size: 26px;
+            font-weight: 900; }
+          #contentBox #content .lastal .lastal10 .title1 ul {
+            display: flex; }
+            #contentBox #content .lastal .lastal10 .title1 ul a {
+              text-decoration: none;
+              color: #000000;
+              margin: 0 10px;
+              font-size: 14px; }
+              #contentBox #content .lastal .lastal10 .title1 ul a:hover {
+                color: red;
+                text-decoration: underline; }
+        #contentBox #content .lastal .lastal10 .content1 {
+          height: 542px;
+          background: #F5F5F5;
+          display: flex; }
+          #contentBox #content .lastal .lastal10 .content1 .lastalLeft:hover {
+            opacity: 0.8; }
+          #contentBox #content .lastal .lastal10 .content1 .lastalLeft a img {
+            width: 230px;
+            height: 542px; }
+          #contentBox #content .lastal .lastal10 .content1 .lastalRight {
+            width: 970px;
+            height: 542px;
+            margin-left: 12px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between; }
+            #contentBox #content .lastal .lastal10 .content1 .lastalRight li {
+              width: 230px;
+              height: 265px;
+              background: #ffff;
+              margin-bottom: 12px;
+              overflow: hidden; }
+              #contentBox #content .lastal .lastal10 .content1 .lastalRight li:hover {
+                box-shadow: 10px 10px 5px rgba(228, 227, 227, 0.85), -10px -10px 5px rgba(228, 227, 227, 0.85); }
+                #contentBox #content .lastal .lastal10 .content1 .lastalRight li:hover a img {
+                  opacity: .8; }
+              #contentBox #content .lastal .lastal10 .content1 .lastalRight li a {
+                display: block;
+                text-align: center; }
+                #contentBox #content .lastal .lastal10 .content1 .lastalRight li a img {
+                  padding: 6px 0;
+                  width: 160px;
+                  height: 160px; }
+                #contentBox #content .lastal .lastal10 .content1 .lastalRight li a article {
+                  width: 230px; }
+                  #contentBox #content .lastal .lastal10 .content1 .lastalRight li a article aside {
+                    width: 230px;
+                    height: 19px;
+                    padding: 0 15px;
+                    margin-bottom: 4px;
+                    font-size: 15px;
+                    color: #242424;
+                    font-weight: 900;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal10 .content1 .lastalRight li a article p {
+                    width: 230px;
+                    height: 14px;
+                    padding: 0 40px;
+                    margin-bottom: 10px;
+                    font-size: 12px;
+                    color: #858585;
+                    white-space: nowrap;
+                    overflow: hidden;
+                    text-overflow: ellipsis; }
+                  #contentBox #content .lastal .lastal10 .content1 .lastalRight li a article span {
+                    display: inline-block;
+                    width: 230px;
+                    height: 21.33px;
+                    font-size: 16px;
+                    color: #E2231A; }
+
+/* footer */
+.tPacture {
+  width: 100%;
+  background: #ffff; }
+  .tPacture article {
+    width: 1200px;
+    height: 199px;
+    margin: 0 auto; }
+    .tPacture article img {
+      width: 100%;
+      height: 100%; }
+
+footer {
+  width: 100%;
+  background: #f5f5f5; }
+  footer #footBox {
+    width: 1200px;
+    height: 294px;
+    margin: 0 auto;
+    padding: 70px 20px 70px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    footer #footBox ul li {
+      margin-bottom: 12px;
+      font-family: "微软雅黑";
+      font-size: 12px; }
+      footer #footBox ul li a {
+        color: #757575; }
+    footer #footBox ul li:nth-of-type(1) {
+      font-weight: 900;
+      margin-bottom: 18px;
+      font-size: 16px; }
+      footer #footBox ul li:nth-of-type(1) a {
+        color: #424242 !important; }
+    footer #footBox .t1 {
+      width: 860px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around; }
+    footer #footBox .t2 {
+      height: 89px;
+      padding: 0 10px 0 80px;
+      display: flex;
+      flex-direction: column;
+      border-left: 1.5px solid #bebebe; }
+      footer #footBox .t2 p {
+        font-size: 20px;
+        color: #e1140a;
+        font-weight: 900;
+        padding-bottom: 10px; }
+      footer #footBox .t2 span {
+        font-size: 12px;
+        color: #757575;
+        margin-bottom: 8px; }
+
+/* bottom */
+#bottom {
+  width: 100%;
+  background: #2e2e2e; }
+  #bottom section {
+    width: 1200px;
+    height: 45.3px;
+    margin: 0 auto;
+    color: #757575;
+    font-size: 12px;
+    display: flex;
+    justify-content: space-between; }
+    #bottom section ul {
+      display: flex;
+      align-items: center; }
+      #bottom section ul li {
+        padding: 0 10px;
+        border-left: 1.5px solid  #757575; }
+        #bottom section ul li a {
+          color: #757575; }
+      #bottom section ul li:nth-child(1) {
+        border: none; }
+    #bottom section ol {
+      display: flex;
+      align-items: center; }
+      #bottom section ol li {
+        padding: 0 10px;
+        border-left: 1.5px solid  #757575; }
+        #bottom section ol li a {
+          color: #757575; }
+      #bottom section ol li:nth-child(1) {
+        border: none; }
